@@ -1,43 +1,141 @@
 proxies:
+  - {name: 🇨🇳 馃嚚馃嚦CN_24, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
+  - {name: 🇦🇺 Relay_馃嚘馃嚭AU-馃嚭馃嚫US_06, server: 1.1.1.1, port: 80, type: vmess, uuid: a20ffefe-e575-4ca8-d0d9-608df76552e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /stream, ws-headers: {Host: streampipe2.us-west2.cphxte9xxqgdrn3z.tk}}
+  - {name: 🇺🇲 馃嚭馃嚫US_2703 |91.68Mb, server: 54.215.234.182, port: 14924, type: vmess, uuid: d099824d-8259-4c45-f6ab-c1896f741393, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: Pool_馃嚞馃嚙GB_42, server: 185.38.150.124, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇨🇳 馃嚚馃嚦CN_22, server: 221.228.99.37, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_62, server: 91.90.121.187, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_54, server: 91.90.121.163, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇺🇲 Pool_馃嚭馃嚫US_61, server: 148.72.169.213, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇩🇪 Pool_馃嚛馃嚜DE_24, server: 45.134.224.15, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: Pool_馃嚠馃嚦IN_1296 |11.45Mb, server: 137.59.52.107, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: Pool_馃嚚馃嚲CY_483 |35.50Mb, server: 195.47.194.42, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: Pool_馃嚚馃嚲CY_470 |32.62Mb, server: 195.47.194.42, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇷🇴 Pool_馃嚪馃嚧RO_77, server: 193.29.106.197, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇩🇪 馃嚛馃嚜DE_30, server: 138.201.150.52, port: 33957, type: vmess, uuid: 89cee221-b06c-46c5-f0d7-4fd3f4740b97, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Pool_馃嚠馃嚦IN_49, server: 137.59.52.107, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇨🇳 馃嚚馃嚦CN_24
+      - 🇦🇺 Relay_馃嚘馃嚭AU-馃嚭馃嚫US_06
+      - 🇺🇲 馃嚭馃嚫US_2703 |91.68Mb
       - Pool_馃嚞馃嚙GB_42
+      - 🇨🇳 馃嚚馃嚦CN_22
+      - 🇷🇴 Pool_馃嚪馃嚧RO_62
+      - 🇷🇴 Pool_馃嚪馃嚧RO_54
+      - 🇺🇲 Pool_馃嚭馃嚫US_61
+      - 🇩🇪 Pool_馃嚛馃嚜DE_24
+      - Pool_馃嚠馃嚦IN_1296 |11.45Mb
+      - Pool_馃嚚馃嚲CY_483 |35.50Mb
+      - Pool_馃嚚馃嚲CY_470 |32.62Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_77
+      - 🇩🇪 馃嚛馃嚜DE_30
+      - Pool_馃嚠馃嚦IN_49
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 🇨🇳 馃嚚馃嚦CN_24
+      - 🇦🇺 Relay_馃嚘馃嚭AU-馃嚭馃嚫US_06
+      - 🇺🇲 馃嚭馃嚫US_2703 |91.68Mb
       - Pool_馃嚞馃嚙GB_42
+      - 🇨🇳 馃嚚馃嚦CN_22
+      - 🇷🇴 Pool_馃嚪馃嚧RO_62
+      - 🇷🇴 Pool_馃嚪馃嚧RO_54
+      - 🇺🇲 Pool_馃嚭馃嚫US_61
+      - 🇩🇪 Pool_馃嚛馃嚜DE_24
+      - Pool_馃嚠馃嚦IN_1296 |11.45Mb
+      - Pool_馃嚚馃嚲CY_483 |35.50Mb
+      - Pool_馃嚚馃嚲CY_470 |32.62Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_77
+      - 🇩🇪 馃嚛馃嚜DE_30
+      - Pool_馃嚠馃嚦IN_49
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇨🇳 馃嚚馃嚦CN_24
+      - 🇦🇺 Relay_馃嚘馃嚭AU-馃嚭馃嚫US_06
+      - 🇺🇲 馃嚭馃嚫US_2703 |91.68Mb
       - Pool_馃嚞馃嚙GB_42
+      - 🇨🇳 馃嚚馃嚦CN_22
+      - 🇷🇴 Pool_馃嚪馃嚧RO_62
+      - 🇷🇴 Pool_馃嚪馃嚧RO_54
+      - 🇺🇲 Pool_馃嚭馃嚫US_61
+      - 🇩🇪 Pool_馃嚛馃嚜DE_24
+      - Pool_馃嚠馃嚦IN_1296 |11.45Mb
+      - Pool_馃嚚馃嚲CY_483 |35.50Mb
+      - Pool_馃嚚馃嚲CY_470 |32.62Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_77
+      - 🇩🇪 馃嚛馃嚜DE_30
+      - Pool_馃嚠馃嚦IN_49
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇨🇳 馃嚚馃嚦CN_24
+      - 🇦🇺 Relay_馃嚘馃嚭AU-馃嚭馃嚫US_06
+      - 🇺🇲 馃嚭馃嚫US_2703 |91.68Mb
       - Pool_馃嚞馃嚙GB_42
+      - 🇨🇳 馃嚚馃嚦CN_22
+      - 🇷🇴 Pool_馃嚪馃嚧RO_62
+      - 🇷🇴 Pool_馃嚪馃嚧RO_54
+      - 🇺🇲 Pool_馃嚭馃嚫US_61
+      - 🇩🇪 Pool_馃嚛馃嚜DE_24
+      - Pool_馃嚠馃嚦IN_1296 |11.45Mb
+      - Pool_馃嚚馃嚲CY_483 |35.50Mb
+      - Pool_馃嚚馃嚲CY_470 |32.62Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_77
+      - 🇩🇪 馃嚛馃嚜DE_30
+      - Pool_馃嚠馃嚦IN_49
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇨🇳 馃嚚馃嚦CN_24
+      - 🇦🇺 Relay_馃嚘馃嚭AU-馃嚭馃嚫US_06
+      - 🇺🇲 馃嚭馃嚫US_2703 |91.68Mb
       - Pool_馃嚞馃嚙GB_42
+      - 🇨🇳 馃嚚馃嚦CN_22
+      - 🇷🇴 Pool_馃嚪馃嚧RO_62
+      - 🇷🇴 Pool_馃嚪馃嚧RO_54
+      - 🇺🇲 Pool_馃嚭馃嚫US_61
+      - 🇩🇪 Pool_馃嚛馃嚜DE_24
+      - Pool_馃嚠馃嚦IN_1296 |11.45Mb
+      - Pool_馃嚚馃嚲CY_483 |35.50Mb
+      - Pool_馃嚚馃嚲CY_470 |32.62Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_77
+      - 🇩🇪 馃嚛馃嚜DE_30
+      - Pool_馃嚠馃嚦IN_49
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇨🇳 馃嚚馃嚦CN_24
+      - 🇦🇺 Relay_馃嚘馃嚭AU-馃嚭馃嚫US_06
+      - 🇺🇲 馃嚭馃嚫US_2703 |91.68Mb
       - Pool_馃嚞馃嚙GB_42
+      - 🇨🇳 馃嚚馃嚦CN_22
+      - 🇷🇴 Pool_馃嚪馃嚧RO_62
+      - 🇷🇴 Pool_馃嚪馃嚧RO_54
+      - 🇺🇲 Pool_馃嚭馃嚫US_61
+      - 🇩🇪 Pool_馃嚛馃嚜DE_24
+      - Pool_馃嚠馃嚦IN_1296 |11.45Mb
+      - Pool_馃嚚馃嚲CY_483 |35.50Mb
+      - Pool_馃嚚馃嚲CY_470 |32.62Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_77
+      - 🇩🇪 馃嚛馃嚜DE_30
+      - Pool_馃嚠馃嚦IN_49
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -60,7 +158,21 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇨🇳 馃嚚馃嚦CN_24
+      - 🇦🇺 Relay_馃嚘馃嚭AU-馃嚭馃嚫US_06
+      - 🇺🇲 馃嚭馃嚫US_2703 |91.68Mb
       - Pool_馃嚞馃嚙GB_42
+      - 🇨🇳 馃嚚馃嚦CN_22
+      - 🇷🇴 Pool_馃嚪馃嚧RO_62
+      - 🇷🇴 Pool_馃嚪馃嚧RO_54
+      - 🇺🇲 Pool_馃嚭馃嚫US_61
+      - 🇩🇪 Pool_馃嚛馃嚜DE_24
+      - Pool_馃嚠馃嚦IN_1296 |11.45Mb
+      - Pool_馃嚚馃嚲CY_483 |35.50Mb
+      - Pool_馃嚚馃嚲CY_470 |32.62Mb
+      - 🇷🇴 Pool_馃嚪馃嚧RO_77
+      - 🇩🇪 馃嚛馃嚜DE_30
+      - Pool_馃嚠馃嚦IN_49
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
