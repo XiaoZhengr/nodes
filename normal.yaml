@@ -5,74 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 42.157.196.103:10639, server: 42.157.196.103, port: 10639, type: ssr, cipher: rc4-md5, password: Yk4UdrOyQg, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 242298:f0mY1GXNQo, obfs-param: ajax.microsoft.com}
-  - {name: 42.157.196.104:10297, server: 42.157.196.104, port: 10297, type: ssr, cipher: aes-256-cfb, password: vCmp8ALih6, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 242298:f0mY1GXNQo, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 dg-hk-node01.linkthink.app:10426, server: dg-hk-node01.linkthink.app, port: 10426, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 242298:f0mY1GXNQo, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 dg-hk-node02.linkthink.app:12150, server: dg-hk-node02.linkthink.app, port: 12150, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 242298:f0mY1GXNQo, obfs-param: ajax.microsoft.com}
-  - {name: 42.157.196.104:20096, server: 42.157.196.104, port: 20096, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 242298:f0mY1GXNQo, obfs-param: ajax.microsoft.com}
+  - {name: 42.157.196.103:10183, server: 42.157.196.103, port: 10183, type: ssr, cipher: rc4-md5, password: Yk4UdrOyQg, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 263433:9oZWSueKTR, obfs-param: ajax.microsoft.com}
+  - {name: 42.157.196.104:10971, server: 42.157.196.104, port: 10971, type: ssr, cipher: aes-256-cfb, password: vCmp8ALih6, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 263433:9oZWSueKTR, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 dg-hk-node04.linkthink.app:31029, server: dg-hk-node04.linkthink.app, port: 31029, type: ssr, cipher: aes-256-cfb, password: 7TEaRnKG3y, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 263433:9oZWSueKTR, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 dg-hk-node04.linkthink.app:41718, server: dg-hk-node04.linkthink.app, port: 41718, type: ssr, cipher: aes-256-cfb, password: J43uezTiD7, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 263433:9oZWSueKTR, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 dg-hk-node05.linkthink.app:31145, server: dg-hk-node05.linkthink.app, port: 31145, type: ssr, cipher: aes-256-cfb, password: WKdJXwm25h, protocol: auth_aes128_md5, obfs: plain, protocol-param: 263433:9oZWSueKTR, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 dg-hk-node01.linkthink.app:10543, server: dg-hk-node01.linkthink.app, port: 10543, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 263433:9oZWSueKTR, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 dg-hk-node02.linkthink.app:12160, server: dg-hk-node02.linkthink.app, port: 12160, type: ssr, cipher: aes-256-cfb, password: e5opjuLDEQ, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 263433:9oZWSueKTR, obfs-param: ajax.microsoft.com}
+  - {name: 42.157.196.104:20817, server: 42.157.196.104, port: 20817, type: ssr, cipher: aes-256-cfb, password: CWSZscLkjf, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 263433:9oZWSueKTR, obfs-param: ajax.microsoft.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 42.157.196.103:10639
-      - 42.157.196.104:10297
-      - 🇭🇰 dg-hk-node01.linkthink.app:10426
-      - 🇭🇰 dg-hk-node02.linkthink.app:12150
-      - 42.157.196.104:20096
+      - 42.157.196.103:10183
+      - 42.157.196.104:10971
+      - 🇭🇰 dg-hk-node04.linkthink.app:31029
+      - 🇭🇰 dg-hk-node04.linkthink.app:41718
+      - 🇭🇰 dg-hk-node05.linkthink.app:31145
+      - 🇭🇰 dg-hk-node01.linkthink.app:10543
+      - 🇭🇰 dg-hk-node02.linkthink.app:12160
+      - 42.157.196.104:20817
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 42.157.196.103:10639
-      - 42.157.196.104:10297
-      - 🇭🇰 dg-hk-node01.linkthink.app:10426
-      - 🇭🇰 dg-hk-node02.linkthink.app:12150
-      - 42.157.196.104:20096
+      - 42.157.196.103:10183
+      - 42.157.196.104:10971
+      - 🇭🇰 dg-hk-node04.linkthink.app:31029
+      - 🇭🇰 dg-hk-node04.linkthink.app:41718
+      - 🇭🇰 dg-hk-node05.linkthink.app:31145
+      - 🇭🇰 dg-hk-node01.linkthink.app:10543
+      - 🇭🇰 dg-hk-node02.linkthink.app:12160
+      - 42.157.196.104:20817
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 42.157.196.103:10639
-      - 42.157.196.104:10297
-      - 🇭🇰 dg-hk-node01.linkthink.app:10426
-      - 🇭🇰 dg-hk-node02.linkthink.app:12150
-      - 42.157.196.104:20096
+      - 42.157.196.103:10183
+      - 42.157.196.104:10971
+      - 🇭🇰 dg-hk-node04.linkthink.app:31029
+      - 🇭🇰 dg-hk-node04.linkthink.app:41718
+      - 🇭🇰 dg-hk-node05.linkthink.app:31145
+      - 🇭🇰 dg-hk-node01.linkthink.app:10543
+      - 🇭🇰 dg-hk-node02.linkthink.app:12160
+      - 42.157.196.104:20817
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 42.157.196.103:10639
-      - 42.157.196.104:10297
-      - 🇭🇰 dg-hk-node01.linkthink.app:10426
-      - 🇭🇰 dg-hk-node02.linkthink.app:12150
-      - 42.157.196.104:20096
+      - 42.157.196.103:10183
+      - 42.157.196.104:10971
+      - 🇭🇰 dg-hk-node04.linkthink.app:31029
+      - 🇭🇰 dg-hk-node04.linkthink.app:41718
+      - 🇭🇰 dg-hk-node05.linkthink.app:31145
+      - 🇭🇰 dg-hk-node01.linkthink.app:10543
+      - 🇭🇰 dg-hk-node02.linkthink.app:12160
+      - 42.157.196.104:20817
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 42.157.196.103:10639
-      - 42.157.196.104:10297
-      - 🇭🇰 dg-hk-node01.linkthink.app:10426
-      - 🇭🇰 dg-hk-node02.linkthink.app:12150
-      - 42.157.196.104:20096
+      - 42.157.196.103:10183
+      - 42.157.196.104:10971
+      - 🇭🇰 dg-hk-node04.linkthink.app:31029
+      - 🇭🇰 dg-hk-node04.linkthink.app:41718
+      - 🇭🇰 dg-hk-node05.linkthink.app:31145
+      - 🇭🇰 dg-hk-node01.linkthink.app:10543
+      - 🇭🇰 dg-hk-node02.linkthink.app:12160
+      - 42.157.196.104:20817
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 42.157.196.103:10639
-      - 42.157.196.104:10297
-      - 🇭🇰 dg-hk-node01.linkthink.app:10426
-      - 🇭🇰 dg-hk-node02.linkthink.app:12150
-      - 42.157.196.104:20096
+      - 42.157.196.103:10183
+      - 42.157.196.104:10971
+      - 🇭🇰 dg-hk-node04.linkthink.app:31029
+      - 🇭🇰 dg-hk-node04.linkthink.app:41718
+      - 🇭🇰 dg-hk-node05.linkthink.app:31145
+      - 🇭🇰 dg-hk-node01.linkthink.app:10543
+      - 🇭🇰 dg-hk-node02.linkthink.app:12160
+      - 42.157.196.104:20817
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -95,11 +116,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 42.157.196.103:10639
-      - 42.157.196.104:10297
-      - 🇭🇰 dg-hk-node01.linkthink.app:10426
-      - 🇭🇰 dg-hk-node02.linkthink.app:12150
-      - 42.157.196.104:20096
+      - 42.157.196.103:10183
+      - 42.157.196.104:10971
+      - 🇭🇰 dg-hk-node04.linkthink.app:31029
+      - 🇭🇰 dg-hk-node04.linkthink.app:41718
+      - 🇭🇰 dg-hk-node05.linkthink.app:31145
+      - 🇭🇰 dg-hk-node01.linkthink.app:10543
+      - 🇭🇰 dg-hk-node02.linkthink.app:12160
+      - 42.157.196.104:20817
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
